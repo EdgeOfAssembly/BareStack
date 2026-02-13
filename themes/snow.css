@@ -1,0 +1,108 @@
+body { 
+    background: linear-gradient(to bottom, #87CEEB 0%, #AED6F1 50%, #F0FFFF 85%, #FFFFFF 100%);
+    color: #222; 
+    font-family: Arial, sans-serif; 
+}
+
+.header h1 { color: #003366; }
+.header p { color: #005588; }
+
+.card { 
+    background: rgba(255, 255, 255, 0.88); 
+    border: 1px solid #B0E0E6; 
+    box-shadow: 0 0 20px rgba(176, 224, 230, 0.5); 
+    backdrop-filter: blur(6px);
+    position: relative; /* for snow cap */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 5%;
+    width: 90%;
+    height: 28px;
+    background: #FFFFFF;
+    border-radius: 60px / 25px;
+    box-shadow: 0 8px 15px rgba(240, 255, 255, 0.6);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.card h3 { color: #004477; }
+
+.progress { 
+    background: #E0F7FA; 
+    border: 1px solid #87CEEB; 
+    box-shadow: 0 0 10px rgba(135, 206, 235, 0.3); 
+}
+
+.bar { 
+    background: linear-gradient(to right, #40E0D0, #00CED1, #48D1CC); 
+    box-shadow: 0 0 15px #40E0D0; 
+}
+
+.logout a { color: #004477; }
+
+.theme-select select { 
+    background: rgba(255, 255, 255, 0.9); 
+    border: 1px solid #87CEEB; 
+    color: #003366; 
+}
+
+/* Snowflakes */
+.snowflake {
+    position: fixed;
+    color: #fff;
+    text-shadow: 0 0 8px #fff;
+    pointer-events: none;
+    z-index: -1; /* behind cards for depth */
+    user-select: none;
+}
+
+@keyframes fall {
+    0% {
+        top: -10vh;
+        opacity: 0;
+    }
+    8% {
+        opacity: 0.9;
+    }
+    92% {
+        opacity: 0.9;
+    }
+    100% {
+        top: 110vh;
+        opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(-40px);
+    }
+    50% {
+        transform: translateX(40px);
+    }
+}
+
+/* Snowman (bigger + gentle bob for now) */
+.snowman {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    font-size: 180px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+    animation: bob 6s ease-in-out infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* Hide matrix rain */
+.matrix-column { display: none; }

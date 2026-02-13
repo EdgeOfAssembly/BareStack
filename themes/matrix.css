@@ -1,0 +1,18 @@
+body { 
+    background: #000; 
+    color: #0f3; 
+    font-family: 'Courier New', monospace; 
+}
+.header h1, .header p { text-shadow: 0 0 10px #0f3; }
+.card { 
+    background: rgba(0, 0, 0, 0.9); /* Solid dark for sharp text */
+    border: 1px solid #0f3; 
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); 
+    backdrop-filter: blur(4px); /* Frosted glass – sharp text over rain */
+}
+.card h3 { text-shadow: 0 0 8px #0f3; }
+.progress { background: #001000; border: 1px solid #0f3; box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); }
+.bar { background: linear-gradient(to right, #0f3 0%, #8f8 50%, #ff0 80%, #f00 100%); box-shadow: 0 0 20px #0f3; }
+.logout a { color: #0f3; text-shadow: 0 0 8px #0f3; }
+.theme-select select { background: #000; color: #0f3; border: 1px solid #0f3; }
+.matrix-column { color: #0f3; text-shadow: 0 0 10px #0f3; opacity: 0.6; } /* Lower rain opacity */
