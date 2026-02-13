@@ -11,7 +11,7 @@
 
 ## 🎯 What Is This?
 
-**BareStack** is a fully functional authentication system and system monitoring dashboard built with *just* PHP, SQLite, and vanilla JavaScript. No build tools. No package managers. No framework fatigue.
+**BareStack** is a fully functional authentication system and system monitoring dashboard built with *just* HTML, CSS, PHP, SQLite, and vanilla JavaScript. No build tools. No package managers. No framework fatigue.
 
 This is **real fullstack development** stripped down to its essence:
 - 🎨 **Frontend**: HTML, CSS, JavaScript (the actual web platform, not the framework-of-the-week)
