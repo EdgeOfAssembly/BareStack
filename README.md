@@ -227,7 +227,7 @@ This project teaches security fundamentals using proven techniques, but security
 ## 📁 Project Structure
 
 ```
-php-app/
+BareStack/
 ├── config.php              # Application configuration (BCrypt cost, etc.)
 ├── login.php               # User login page
 ├── register.php            # User registration page  
@@ -719,8 +719,8 @@ We welcome contributions! Especially:
 # 1. Fork the repository on GitHub
 
 # 2. Clone your fork
-git clone https://github.com/YOUR_USERNAME/php-app.git
-cd php-app
+git clone https://github.com/YOUR_USERNAME/BareStack.git
+cd BareStack
 
 # 3. Create a feature branch
 git checkout -b feature/my-awesome-feature
@@ -838,8 +838,8 @@ Ready to level up? Try implementing these features:
 ## 📞 Support & Community
 
 - 📖 **Read the code** - Comments explain everything!
-- 🐛 **Found a bug?** [Open an issue](https://github.com/EdgeOfAssembly/php-app/issues)
-- 💡 **Have a question?** [Start a discussion](https://github.com/EdgeOfAssembly/php-app/discussions)
+- 🐛 **Found a bug?** [Open an issue](https://github.com/EdgeOfAssembly/BareStack/issues)
+- 💡 **Have a question?** [Start a discussion](https://github.com/EdgeOfAssembly/BareStack/discussions)
 - 🔐 **Security issue?** See [SECURITY.md](SECURITY.md) for reporting
 - 💬 **Want to chat?** Join discussions in the Issues/PR comments
 
